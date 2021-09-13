@@ -43,7 +43,16 @@ let quotes = [
     citation: "The song of the Lark"
   },
   {
-    quote: ""
+    quote: "An Investment in Knowledge Pays The Best Interest",
+    source: "Benjamin Franklin"
+  },
+  {
+    quote: "Failure Isn't Fatal, But Failing To Change Might Be.",
+    source: "John Wooden"
+  },
+  {
+    quote: "The Only Real Mistake Is The One From Which We Learn Nothing.",
+    source: "Henry Ford"
   }
 
 
