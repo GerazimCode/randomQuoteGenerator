@@ -10,7 +10,44 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
+let quotes = [
+  {
+    quote: "It Always Seems Impossible Until It's Done!",
+    source: "Nelson Mandella",
+    year: "2001"
+  },
+  {
+    quote: "The Bad News Is Time Flies. The Good News Is You Are The Pilot.",
+    source: "Michael Artchuler"
+  },
+  {
+    quote: "Life Is Like Riding A Bicycle, To Keep Your Balance You Must Keep Moving.",
+    source: "Albert Eistein"
+  },
+  {
+    quote: "Action Without Thought Is Empty. Thought Without Action Is Blind.",
+    source: "Kwame Nkuruma"
+  },
+  {
+    quote: "Winners Never Quit, And Quitters Never Win.",
+    source: "Vince Lombardi"
+  },
+  {
+    quote: "Keep Your Face Always Towards The Sunshine - And Shadows Will Fall Behind.",
+    source: "Walt Whitman",
+    citation: "BrainyQuotes"
+  },
+  {
+    quote: "There are some things you learn best in calm, and some in storm.",
+    source: "Willa Cather",
+    citation: "The song of the Lark"
+  },
+  {
+    quote: ""
+  }
 
+
+]
 
 
 /***
