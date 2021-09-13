@@ -38,7 +38,7 @@ let quotes = [
     citation: "BrainyQuotes"
   },
   {
-    quote: "There are some things you learn best in calm, and some in storm.",
+    quote: "There Are Some Things You Learn Best In Calm, And Some In Storm.",
     source: "Willa Cather",
     citation: "The song of the Lark"
   },
@@ -58,16 +58,24 @@ let quotes = [
 
 ]
 
-
 /***
  * `getRandomQuote` function
 ***/
 
+function getRandomQuote(){
+  let randomNumber = Math.floor(Math.random() * 10);
+  let randomQuote = quotes[randomNumber];
 
+  return randomQuote;
+}
 
 /***
  * `printQuote` function
 ***/
+
+function printQuote(){
+  
+}
 
 
 
