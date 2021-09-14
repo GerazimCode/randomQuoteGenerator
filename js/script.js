@@ -63,9 +63,8 @@ let quotes = [
 ***/
 
 function getRandomQuote(){
-  let randomNumber = Math.floor(Math.random() * 10);
+  let randomNumber = Math.floor(Math.random() * quotes.length);
   let randomQuote = quotes[randomNumber];
-
   return randomQuote;
 }
 
@@ -74,7 +73,27 @@ function getRandomQuote(){
 ***/
 
 function printQuote(){
+  // gets a random quote object
+  let displayRandomQuote = getRandomQuote();
   
+  let assembleString = 
+  `
+    <p class = "quotes">${displayRandomQuote.quote}</p>
+    <p class = "source"> ${displayRandomQuote.source}
+
+  `
+  // coditions to check if the quote has a citation or year
+  if (displayRandomQuote["citation"]){
+    assembleString +=`<span class="citation">${displayRandomQuote.citation}</span>`;
+  }
+
+  if (displayRandomQuote["year"]){
+     assembleString += `<span class="year">${displayRandomQuote.year}</span>`;
+  }
+
+  assembleString += `</p>`
+
+  document.getElementById('quote-box').innerHTML = assembleString;
 }
 
 
