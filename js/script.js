@@ -8,7 +8,7 @@ project 1 - A Random Quote Generator
   // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
 /*** 
- * `quotes` array 
+ * an array of objects containing various quotes and their attributes 
 ***/
 let quotes = [
   {
@@ -54,12 +54,10 @@ let quotes = [
     quote: "The Only Real Mistake Is The One From Which We Learn Nothing.",
     source: "Henry Ford"
   }
-
-
 ]
 
 /***
- * `getRandomQuote` function
+ * a function that collects quotes from the quotes array randomly
 ***/
 
 function getRandomQuote(){
@@ -69,14 +67,13 @@ function getRandomQuote(){
 }
 
 /***
- * `printQuote` function
+ * the function resposinsible of displaying random quotes on the page and check if the quote has citation of year.
 ***/
 
 function printQuote(){
   // gets a random quote object
   let displayRandomQuote = getRandomQuote();
   
-
   // generating the string that stores the html for the page.
   let assembleString = 
   `
@@ -86,21 +83,21 @@ function printQuote(){
   `
   // conditions to check if the quote has a citation or year
   if (displayRandomQuote["citation"]){
+
+    // concantenates the span element to the string variable when the contion is true
     assembleString +=`<span class="citation">${displayRandomQuote.citation}</span>`;
   }
 
   if (displayRandomQuote["year"]){
      assembleString += `<span class="year">${displayRandomQuote.year}</span>`;
   }
-
+  // concantenates the closing tag to the main string of html.
   assembleString += `</p>`
 
   // this line of code inserts the string into the html of the page so it can desplay on the page
   document.getElementById('quote-box').innerHTML = assembleString;
+
 }
-
-
-
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
