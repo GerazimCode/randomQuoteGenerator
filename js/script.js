@@ -76,13 +76,15 @@ function printQuote(){
   // gets a random quote object
   let displayRandomQuote = getRandomQuote();
   
+
+  // generating the string that stores the html for the page.
   let assembleString = 
   `
-    <p class = "quotes">${displayRandomQuote.quote}</p>
+    <p class = "quote">${displayRandomQuote.quote}</p>
     <p class = "source"> ${displayRandomQuote.source}
 
   `
-  // coditions to check if the quote has a citation or year
+  // conditions to check if the quote has a citation or year
   if (displayRandomQuote["citation"]){
     assembleString +=`<span class="citation">${displayRandomQuote.citation}</span>`;
   }
@@ -93,6 +95,7 @@ function printQuote(){
 
   assembleString += `</p>`
 
+  // this line of code inserts the string into the html of the page so it can desplay on the page
   document.getElementById('quote-box').innerHTML = assembleString;
 }
 
