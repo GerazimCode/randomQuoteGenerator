@@ -84,7 +84,7 @@ function printQuote(){
   // conditions to check if the quote has a citation or year
   if (displayRandomQuote["citation"]){
 
-    // concantenates the span element to the string variable when the contion is true
+    // concantenates the span element to the string variable when the condition is true
     assembleString +=`<span class="citation">${displayRandomQuote.citation}</span>`;
   }
 
