@@ -98,6 +98,8 @@ function printQuote(){
   document.getElementById('quote-box').innerHTML = assembleString;
 
 }
+
+// To further develop to exceed...
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
